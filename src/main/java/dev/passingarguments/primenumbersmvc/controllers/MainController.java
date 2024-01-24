@@ -3,6 +3,7 @@ package dev.passingarguments.primenumbersmvc.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class MainController {
@@ -15,6 +16,11 @@ public class MainController {
     @GetMapping("/main")
     public String showMain() {
         return "main";
+    }
+
+    @PostMapping("/result")
+    public String showResult() {
+        return "display-result";
     }
 
 }
