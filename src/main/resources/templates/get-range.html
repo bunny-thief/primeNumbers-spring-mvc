@@ -24,12 +24,9 @@
 
     <div class="row">
         <form action="#" th:action="@{/result}" method="POST">
-            <input type="text" name="number" placeholder="Enter number"/>
-            <input type="submit" name="checkPrime" value="Check Prime"
-                   class="btn btn-secondary d-inline-flex align-items-center"/>
-            <input type="submit" name="nextPrime" value="Next Prime"
-                   class="btn btn-secondary d-inline-flex align-items-center"/>
-            <input type="submit" name="getRange" value="Primes in Range"
+            <input type="text" name="firstNumber" placeholder="Enter first number"/>
+            <input type="text" name="secondNumber" placeholder="Enter Second number"/>
+            <input type="submit" name="primesInRange" value="Primes in Range"
                    class="btn btn-secondary d-inline-flex align-items-center"/>
             <input type="submit" class="btn btn-secondary d-inline-flex align-items-center" value="Home"/>
         </form>
