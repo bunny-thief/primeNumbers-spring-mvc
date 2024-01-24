@@ -37,4 +37,16 @@ public class MainController {
         return "display-result";
     }
 
+    @PostMapping(path = "/result", params = "nextPrime")
+    public String showResultNextPrime(@RequestParam("number") int number,
+                                      Model model) {
+
+        int nextPrime = PrimeNumbers.nextPrime(number);
+        String message = String.format("%d is the next prime number after %d.", nextPrime, number);
+
+        model.addAttribute("message", message);
+
+        return "display-result";
+    }
+
 }
