@@ -1,9 +1,12 @@
 package dev.passingarguments.primenumbersmvc.controllers;
 
+import dev.passingarguments.primenumbers.*;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class MainController {
@@ -18,8 +21,19 @@ public class MainController {
         return "main";
     }
 
-    @PostMapping("/result")
-    public String showResult() {
+    @PostMapping(path = "/result", params = "checkPrime")
+    public String showResultIsPrime(@RequestParam("number") int number,
+                                    Model model) {
+        String message = "";
+
+        if (PrimeNumbers.isPrime(number)) {
+            message = String.format("%d is a prime number.", number);
+        } else {
+            message = String.format("%d is not a prime number.", number);
+        }
+
+        model.addAttribute("message", message);
+
         return "display-result";
     }
 
