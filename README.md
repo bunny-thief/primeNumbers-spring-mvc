@@ -1,22 +1,4 @@
-<div style="text-align:center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Spring_Boot.svg/240px-Spring_Boot.svg.png" width="200" />
-</div>
-
-<div style="text-align:center">
-    <img src="src/img/Logo_Temurin_2021_08_17_JRR_RGB-V1G.png" width="400" />
-</div>
-
-<p style="text-align:center">
-
-<span>
-    <img src="src/img/thymeleaf_logo_transparent.png" width="345" />
-</span>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<span>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/301px-Bootstrap_logo.svg.png" width="75" />
-</span>
-
-</p>
+![](primenumbers-mvc.png)
 
 # primeNumbersApp
 
