@@ -42,7 +42,7 @@ The project can be distributed via the JAR file (primeNumberApp-1.0.jar) which i
 
 ## Author
 
-[@bunnythief@hachyderm.io](https://hachyderm.io/@bunnythief)
+![](Mastodon_logo.png) [@bunnythief@hachyderm.io](https://hachyderm.io/@bunnythief)
 
 ## License
 
