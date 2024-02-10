@@ -14,6 +14,8 @@ Instead of copying and pasting the code from inside the PrimeNumbers class, I th
 
 ### Dependencies
 
+This application was compiled with Eclipse Temurin 17.0.8, Spring Framework 6.1.3 and Spring Boot 3.2.2.
+
 This application has one dependency on the [primeNumbers library](https://github.com/bunny-thief/primeNumbers). It needs to be installed to the Maven local repository. Simply, clone the library and then run the Maven install command.
 
 ```
@@ -23,22 +25,51 @@ git clone git@github.com:bunny-thief/primeNumbers.git
 cd into the project directory.
 
 ```
-cd primeNumberApp
+cd primeNumbers
 ```
 
 Then run the install command to save it to the local Maven repository.
 
 ```
-mvn install
+mvn clean install
 ```
 
 Once that is taken care of, you should be able to run the primeNumbers-spring-mvc app locally.
 
-The JAR file was compiled with Eclipse Temurin 17.0.8+7.
+### Execute Application
 
-### Installing
+There are two options for running the application; clone the Github repo and compile the project or downloading the [**prime-numbers-mvc-0.0.1.jar**](https://github.com/bunny-thief/primeNumbers-spring-mvc/blob/main/prime-numbers-mvc-0.0.1.jar "Prime Numbers MVC JAR").
 
-The project can be distributed via the JAR file (primeNumberApp-1.0.jar) which is located in the project's base directory.
+**Important Note**: Both the above options require a JDK installed that is at least version 17.0.8 or above for the application to execute.
+
+#### Clone Github Repo
+
+Follow these steps to compile and run the application:
+1. Clone the project.
+
+```agsl
+git clone git@github.com:bunny-thief/primeNumbers-spring-mvc.git
+```
+2. `cd` into the project directory.
+
+```agsl
+cd prime-numbers-mvc
+```
+3. Run the Maven clean and package commands to create the `JAR` file.
+
+```agsl
+mvn clean package
+```
+
+4. Run the application.
+
+```agsl
+java -jar prime-numbers-mvc-0.0.1.jar
+```
+
+#### Download JAR File
+
+Alternatively, you can download the [**prime-numbers-mvc-0.0.1.jar**](https://github.com/bunny-thief/primeNumbers-spring-mvc/blob/main/prime-numbers-mvc-0.0.1.jar "Prime Numbers MVC JAR") file from the root directory of this repo and run `java -jar prime-numbers-mvc-0.0.1.jar` in the location where it was saved.
 
 ## Author
 
